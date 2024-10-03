@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script src="function.js"></script>
+        <div class="wrap">
+            <h1>Krikor's Wonderful Calculator</h1>
+            <div class="display">
+                <p id="output">0</p>
+            </div>
+            <div class="button-row">
+                <button type="button" onClick="clearAll()">CA</button>
+                <button type="button" onClick="clears()">C</button>
+            </div>
+            <div class="button-row">
+                <button type="button" onClick="numberSelect('1')">1</button>
+                <button type="button" onClick="numberSelect('2')">2</button>
+                <button type="button" onClick="numberSelect('3')">3</button>
+                <button type="button" onClick="oppSelect('+')">+</button>
+            </div>
+            <div class="button-row">
+                <button type="button" onClick="numberSelect('4')">4</button>
+                <button type="button" onClick="numberSelect('5')">5</button>
+                <button type="button" onClick="numberSelect('6')">6</button>
+                <button type="button" onClick="oppSelect('-')">-</button>
+            </div>
+            <div class="button-row">
+                <button type="button" onClick="numberSelect('7')">7</button>
+                <button type="button" onClick="numberSelect('8')">8</button>
+                <button type="button" onClick="numberSelect('9')">9</button>
+                <button type="button" onClick="oppSelect('*')">*</button>
+            </div>
+            <div class="button-row">
+                <button type="button" onClick="numberSelect('0')">0</button>
+                <button type="button" onClick="numberSelect('.')">.</button>
+                <button type="button" onClick="calculate()">=</button>
+                <button type="button" onClick="oppSelect('/')">/</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
