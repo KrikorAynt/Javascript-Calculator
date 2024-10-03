@@ -17,7 +17,7 @@ function numberSelect(num){
             num1=num;
         document.getElementById("output").innerHTML = num1;
     }
-    
+    document.getElementById('screen').scrollLeft = document.getElementById('screen').scrollWidth;
 }
 function oppSelect(opps){
     opp = opps 
@@ -25,7 +25,8 @@ function oppSelect(opps){
         document.getElementById("output").innerHTML = num1+opp;
     if(num2)
         document.getElementById("output").innerHTML +=num2;
-  
+    document.getElementById('screen').scrollLeft = document.getElementById('screen').scrollWidth;
+
 }
 function clearAll(){
     num1='';
@@ -46,6 +47,8 @@ function clears(){
 
 }
 function calculate(){
+    if(!num2)
+        num2='0';
     if(opp=='+')
         output = parseFloat(num1)+parseFloat(num2);
     if(opp=='-')
