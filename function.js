@@ -59,8 +59,11 @@ function calculate(){
         output = parseFloat(num1)*parseFloat(num2);
     if(opp=='/')
         output = parseFloat(num1)/parseFloat(num2);
+    if(!opp)
+        output = parseFloat(num1);
     document.getElementById("output").innerHTML = output;
     num1=""+ output;
     num2="";
-    opp=""
+    opp="";
+    output=0;
 }
